@@ -10,31 +10,36 @@
 </head>
 <body>
 
-        <div class="container">
-          <h1 class="mt-5">Конструктор комплектов</h1>
-      
-          <div class="progress mt-4">
-            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-      
-          <div class="mb-4 mt-4">
-            <h3>Выберите категорию:</h3>
-            <div class="btn-group" role="group" aria-label="Категории">
-              <button type="button" class="btn btn-primary category-btn" data-category="oven">Духовой шкаф</button>
+    <div class="container mt-4">
+        <h1>Конструктор комплектов</h1>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+              <button type="button" class="btn btn-primary category-btn active" data-category="oven">Духовой шкаф</button>
+            </div>
+            <div class="col">
               <button type="button" class="btn btn-primary category-btn" data-category="cooktop">Варочная поверхность</button>
+            </div>
+            <div class="col">
               <button type="button" class="btn btn-primary category-btn" data-category="hood">Вытяжка</button>
+            </div>
+            <div class="col">
               <button type="button" class="btn btn-primary category-btn" data-category="microwave">Микроволновка</button>
             </div>
           </div>
-      
-          <div id="categoryCards" class="mt-4" style="display: none;">
-            <h3 id="categoryTitle"></h3>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4" id="cardContainer"></div>
-          </div>
-      
-          <h2 class="mt-4">Выбранные товары:</h2>
-          <ul id="selectedProductsList"></ul>
+
+        <div id="categoryCards" style="display: none;">
+          <h2 id="categoryTitle" class="mt-4"></h2>
+          <div class="row" id="cardContainer"></div>
         </div>
+        <ul id="selectedProductsList"></ul>
+        <button id="createSetButton" type="button" class="btn btn-primary">Создать набор</button>
+       
+      </div>
+    
       
     
       
